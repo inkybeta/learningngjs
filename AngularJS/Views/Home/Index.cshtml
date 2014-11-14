@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html ng-app="CompanyApplication">
+    <head>
+        <title>AngularJS Test Application</title>
+        @Styles.Render("~/Content/bootstrap.min.css")
+        @Scripts.Render("~/Scripts/angular.min.js")
+        @Scripts.Render("~/Scripts/bootstrap.min.js")
+        @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
+        @Scripts.Render("~/Scripts/app.js")
+    </head> 
+    <body ng-controller="companyController as controller">
+        <input type="text" ng-model="controller.filterJob"/>
+        <div class="table">
+            <div class="failed" ng-if="employees == null">
+                Sorry, we were unable to fetch the data.
+            </div>
+            <div class="table-row" ng-repeat="employee in controller.employees|filter:{ Job: controller.filterJob }" ng-if="controller.employees != null">
+                <div class="table-column">{{employee.Name}}</div>
+            </div>
+        </div>
+    </body>
+</html>
