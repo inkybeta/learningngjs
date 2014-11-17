@@ -81,6 +81,8 @@ namespace AngularJSData.Repositories
 
         public async Task<bool> AddEmployee(EmployeeModel employee)
         {
+            if(employee == null)
+                throw new ArgumentNullException("employee", "The employee model was null.");
             bool successful = _dbContext.EmployeeDataSet.Add(employee) != null;
             await SaveChanges();
             return successful;

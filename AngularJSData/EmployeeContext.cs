@@ -14,7 +14,6 @@ namespace AngularJSData
 
         public EmployeeContext() : base("EmployeeDatabase")
         {
-
         }
     }
 }

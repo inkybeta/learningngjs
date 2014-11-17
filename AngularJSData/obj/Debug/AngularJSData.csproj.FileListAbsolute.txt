@@ -10,3 +10,15 @@ C:\Users\Justin\documents\visual studio 2013\Projects\AngularJS\AngularJSData\bi
 C:\Users\Justin\documents\visual studio 2013\Projects\AngularJS\AngularJSData\obj\Debug\AngularJSData.csprojResolveAssemblyReference.cache
 C:\Users\Justin\documents\visual studio 2013\Projects\AngularJS\AngularJSData\obj\Debug\AngularJSData.dll
 C:\Users\Justin\documents\visual studio 2013\Projects\AngularJS\AngularJSData\obj\Debug\AngularJSData.pdb
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\AngularJSData.dll.config
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\AngularJSData.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\AngularJSData.pdb
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\AngularJSCore.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\EntityFramework.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\AngularJSCore.pdb
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\EntityFramework.xml
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\obj\Debug\AngularJSData.csprojResolveAssemblyReference.cache
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\obj\Debug\AngularJSData.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\obj\Debug\AngularJSData.pdb

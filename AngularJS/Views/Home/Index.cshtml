@@ -7,16 +7,31 @@
         @Scripts.Render("~/Scripts/bootstrap.min.js")
         @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
         @Scripts.Render("~/Scripts/app.js")
+        @Styles.Render("~/Content/normalize.css")
     </head> 
     <body ng-controller="companyController as controller">
-        <input type="text" ng-model="controller.filterJob"/>
+        <div class="employee-search">Find employee: <input type="text" ng-model="controller.filterJob" /></div>
         <div class="table">
-            <div class="failed" ng-if="employees == null">
+            <div class="failed" ng-show="controller.employees == null">
                 Sorry, we were unable to fetch the data.
             </div>
-            <div class="table-row" ng-repeat="employee in controller.employees|filter:{ Job: controller.filterJob }" ng-if="controller.employees != null">
-                <div class="table-column">{{employee.Name}}</div>
+            <div class="table-row" ng-repeat="employee in controller.employees|filter:{ Job: controller.filterJob }">
+                <div class="table-column" ng-bind="employee.Name"></div>
+                <div class="table-column" ng-bind="employee.Job"></div>
+                <div class="table-column" ng-bind="employee.Age"></div>
+                <div class="table-column" ng-bind="employee.Performance"></div>
+                <div class="table-column" ng-bind="employee.Job"></div>
             </div>
         </div>
+        <form name="addEmployeeForm" class="form" ng-controller="formController as fCtrl" ng-submit="addEmployeeForm.$valid && fCtrl.submitForm(controller)" novalidate>
+            Add a new employee:
+            Name: <input type="text" name="Name" ng-model="fCtrl.submitEmployee.Name" required />
+            Age: <input type="number" name="Age" ng-model="fCtrl.submitEmployee.Age" required />
+            Job: <input type="text" name="Job" ng-model="fCtrl.submitEmployee.Job" required />
+            Performance: <input type="number" name="Performance" ng-model="fCtrl.submitEmployee.Performance" required />
+            Group: <input type="text" name="Group" ng-model="fCtrl.submitEmployee.Group" required />
+            <input type="submit" value="Add Employee" />
+            <div ng-hide="addEmployeeForm.$valid">The form is not valid</div>
+        </form>
     </body>
 </html>

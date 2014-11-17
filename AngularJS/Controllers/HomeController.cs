@@ -37,8 +37,10 @@ namespace AngularJS.Controllers
             return await Task.Factory.StartNew(() => JsonConvert.SerializeObject(employees));
         }
 
-        public async Task<string> AddEmployee(EmployeeModel employee)
+        [HttpPost]
+        public async Task<string> AddEmployee(string jsonEmployee)
         {
+            var employee = JsonConvert.DeserializeObject<EmployeeModel>(jsonEmployee);
             Response.Headers.Set("Content-Type", "text/plain");
             string succeeded = (await _dbContext.AddEmployee(employee)).ToString();
             return await Task.Factory.StartNew(() => succeeded);

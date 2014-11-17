@@ -10,3 +10,15 @@ C:\Users\Justin\documents\visual studio 2013\Projects\AngularJS\AngularJSCore\bi
 C:\Users\Justin\documents\visual studio 2013\Projects\AngularJS\AngularJSCore\obj\Debug\AngularJSCore.csprojResolveAssemblyReference.cache
 C:\Users\Justin\documents\visual studio 2013\Projects\AngularJS\AngularJSCore\obj\Debug\AngularJSCore.dll
 C:\Users\Justin\documents\visual studio 2013\Projects\AngularJS\AngularJSCore\obj\Debug\AngularJSCore.pdb
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\bin\Debug\AngularJSCore.dll.config
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\bin\Debug\AngularJSCore.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\bin\Debug\AngularJSCore.pdb
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\bin\Debug\EntityFramework.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\bin\Debug\EntityFramework.xml
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\obj\Debug\AngularJSCore.csprojResolveAssemblyReference.cache
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\obj\Debug\AngularJSCore.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSCore\obj\Debug\AngularJSCore.pdb
