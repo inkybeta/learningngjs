@@ -12,7 +12,10 @@ namespace AngularJSCore
 {
     public class EmployeeModel
     {
-        [Key] public int EmployeeNumber { get; set; }
+        [JsonIgnore]
+        [Key]
+        public int EmployeeNumber { get; set; }
+
         public string Name { get; set; }
         public int Age { get; set; }
         public string Job { get; set; }

@@ -22,3 +22,5 @@ C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\Ang
 C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\obj\Debug\AngularJSData.csprojResolveAssemblyReference.cache
 C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\obj\Debug\AngularJSData.dll
 C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\obj\Debug\AngularJSData.pdb
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Justin\Documents\visual studio 2013\Projects\AngularJS\learningngjs\AngularJSData\bin\Debug\Newtonsoft.Json.xml

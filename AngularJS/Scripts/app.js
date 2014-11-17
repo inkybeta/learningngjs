@@ -12,7 +12,15 @@ app.controller("companyController", ['$http', function($http) {
             self.employees = null;
             self.failReaons = reason;
         });
-
+    self.refreshData = function() {
+        $http.post(domain + "/Home/GetEmployees?count=20").then(function(response) {
+                self.employees = response.data;
+            },
+            function(reason) {
+                self.employees = null;
+                self.failReaons = reason;
+            });
+    };
     /*$scope.$watch("filterJob", function(newValue, oldValue) {
         if (newValue == oldValue) {
             return;
@@ -34,21 +42,23 @@ app.controller("companyController", ['$http', function($http) {
             });
         }
     });*/
-    self.refreshData = function() {
-        $http.post(domain + "/Home/GetEmployees?count=20").then(function(response) {
-                self.employees = response.data;
-            },
-            function(reason) {
-                self.employees = null;
-                self.failReaons = reason;
-            });
-    };
 }]);
-app.controller("formController", function ($http) {
+app.controller("tabController", function() {
+    var self = this;
+    self.currentTab = "add";
+    self.isCurrentTab = function(isTab) {
+        return self.currentTab == isTab;
+    };
+});
+app.controller("addEmployeeController",["$http", function ($http) {
     var self = this;
     self.submitEmployee = {};
-
-    self.submitForm = function(controller) {
+    self.isSubmitted = false;
+    self.submitForm = function (controller, isValid) {
+        if (isValid == false) {
+            self.isSubmitted = true;
+            return;
+        }
         $http.post(domain + "/Home/AddEmployee", { JSONemployee: JSON.stringify(self.submitEmployee) }).then(function() {
             self.submitEmployee = {};
             controller.refreshData();
@@ -56,4 +66,4 @@ app.controller("formController", function ($http) {
             controller.employees = null;
         });
     };
-});
+}]);
