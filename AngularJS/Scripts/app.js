@@ -1,14 +1,17 @@
 ﻿var domain = "http://" + location.host;
-var app = angular.module("CompanyApplication", []);
+var app = angular.module("CompanyApplication", ["filters"]);
 app.controller("companyController", ['$http', function($http) {
     var self = this;
+    self.filterProperties = [];
     self.employees = [];
     self.failReaons = "";
     self.filterJob = "";
+    self.filterRequest = "Job";
     $http.post(domain + "/Home/GetEmployees?count=20").then(function(response) {
             self.employees = response.data;
+            self.filterProperties = Object.keys(self.employees[0]);
         },
-        function (reason, status, headers, config) {
+        function(reason, status, headers, config) {
             self.employees = null;
             self.failReaons = reason;
         });

@@ -4,15 +4,11 @@
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
-.employee-search {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .table {
     display: table;
-    margin-left: 40px;
-    margin-right: 40px
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .table-row {
     display: table-row;
@@ -24,11 +20,6 @@
 }
 .tab {
     padding: 40px 40px 40px 40px;
-}
-.employee-search-form {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .ng-dirty.ng-invalid {
     border-color: #ff0000;
